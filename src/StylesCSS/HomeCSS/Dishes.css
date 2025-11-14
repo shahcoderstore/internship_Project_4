@@ -1,0 +1,274 @@
+.dishes-section {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.dishes-section span {
+    font-size: 36px;
+    line-height: 46px;
+    font-family: "Cookie", cursive;
+    color: #e7272d !important;
+}
+
+.dishes-section h2 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 1rem !important;
+    font-size: 42px;
+    line-height: 52px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 35%;
+    text-align: center;
+}
+
+.dishes-lists-con {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    gap: 3rem;
+}
+
+.list-categry-con {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.list-categry-con p {
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list-categry-con p:hover {
+    color: #e7272d;
+}
+
+.list-dishes-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.dish-container {
+    border: 2px dotted rgb(146, 146, 146);
+    width: 40%;
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dish-container img {
+    width: 30%;
+    object-fit: fill;
+}
+
+.decription h4 {
+    font-size: 25px;
+    line-height: 32px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.decription p {
+    color: #7e8690;
+    font-size: 18px;
+    width: 80%;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .dishes-section {
+        padding: 2.5rem 1rem;
+    }
+    
+    .dishes-section span {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .dishes-section h2 {
+        font-size: 36px;
+        line-height: 46px;
+        width: 50%;
+    }
+    
+    .dishes-lists-con {
+        width: 85%;
+        padding: 2rem 0;
+        gap: 2.5rem;
+    }
+    
+    .list-categry-con {
+        width: 75%;
+        gap: 1.5rem;
+    }
+    
+    .list-categry-con p {
+        font-size: 16px;
+    }
+    
+    .dish-container {
+        width: 45%;
+        padding: 1.2rem 0;
+        gap: 1.5rem;
+    }
+    
+    .dish-container img {
+        width: 32%;
+    }
+    
+    .decription h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .decription p {
+        font-size: 16px;
+        width: 85%;
+    }
+}
+
+/* Mobile styles (< 768px) */
+@media screen and (max-width: 768px) {
+    .dishes-section {
+        padding: 2rem 1rem;
+    }
+    
+    .dishes-section span {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .dishes-section h2 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 85%;
+    }
+    
+    .dishes-lists-con {
+        width: 95%;
+        padding: 1.5rem 0;
+        gap: 2rem;
+    }
+    
+    .list-categry-con {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .list-categry-con p {
+        font-size: 15px;
+        padding: 0.5rem 1rem;
+    }
+    
+    .list-dishes-con {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .dish-container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+    
+    .dish-container img {
+        width: 60%;
+        max-width: 200px;
+    }
+    
+    .decription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .decription h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .decription p {
+        font-size: 16px;
+        width: 95%;
+        text-align: center;
+    }
+}
+
+/* Small mobile (< 480px) */
+@media screen and (max-width: 480px) {
+    .dishes-section {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .dishes-section span {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .dishes-section h2 {
+        font-size: 26px;
+        line-height: 36px;
+        width: 95%;
+    }
+    
+    .dishes-lists-con {
+        width: 100%;
+        gap: 1.5rem;
+    }
+    
+    .list-categry-con {
+        gap: 0.8rem;
+    }
+    
+    .list-categry-con p {
+        font-size: 14px;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .list-dishes-con {
+        gap: 1.2rem;
+    }
+    
+    .dish-container {
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .dish-container img {
+        width: 70%;
+        max-width: 180px;
+    }
+    
+    .decription h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .decription p {
+        font-size: 15px;
+        width: 100%;
+    }
+}

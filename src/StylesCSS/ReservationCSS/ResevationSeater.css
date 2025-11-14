@@ -1,0 +1,354 @@
+.ResevationSeater-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 6rem 0;
+}
+
+.ResevationSeater-left {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 45%;
+    height: 40vh;
+}
+
+.ResevationSeater-left span {
+    font-size: 36px;
+    line-height: 46px;
+    font-family: "Cookie", cursive;
+    color: #e7272d !important;
+}
+
+.ResevationSeater-left h2 {
+    font-size: 52px;
+    line-height: 52px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.reservation-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+}
+
+.reservation-form-container div {
+    width: 30%;
+    display: flex;
+    gap: 0.3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.reservation-form-container div label {
+    font-size: 18px;
+    color: #7e8690;
+}
+
+.reservation-form-container div input {
+    width: 200px;
+    padding: 0.6rem 0.3rem;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0px 0px 3px 1px grey;
+    outline: none;
+}
+
+.reservation-form-container div select {
+    width: 200px;
+    padding: 0.6rem 0.3rem;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0px 0px 3px 1px grey;
+}
+
+.ResevationSeater-right {
+    border: 3px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+}
+
+.ResevationSeater-right > span {
+    font-size: 26px;
+    font-family: "Cookie", cursive;
+    color: #e7272d !important;
+}
+
+.ResevationSeater-right h3 {
+    font-size: 45px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.ResevationSeater-right div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ResevationSeater-right div .call {
+    font-size: 26px;
+    font-family: "Cookie", cursive;
+    color: #e7272d !important;
+    margin-top: 1.5rem;
+}
+
+.ResevationSeater-right div .num {
+    font-size: 45px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .ResevationSeater-section {
+        gap: 2rem;
+        padding: 4rem 2rem;
+    }
+    
+    .ResevationSeater-left {
+        width: 48%;
+        height: auto;
+        gap: 2rem;
+    }
+    
+    .ResevationSeater-left span {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .ResevationSeater-left h2 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    
+    .reservation-form-container {
+        gap: 1.5rem;
+    }
+    
+    .reservation-form-container div {
+        width: 45%;
+    }
+    
+    .reservation-form-container div label {
+        font-size: 17px;
+    }
+    
+    .reservation-form-container div input,
+    .reservation-form-container div select {
+        width: 100%;
+    }
+    
+    .ResevationSeater-right {
+        padding: 2.5rem;
+        width: 48%;
+    }
+    
+    .ResevationSeater-right > span {
+        font-size: 24px;
+    }
+    
+    .ResevationSeater-right h3 {
+        font-size: 38px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .ResevationSeater-right div .call {
+        font-size: 24px;
+        margin-top: 1.2rem;
+    }
+    
+    .ResevationSeater-right div .num {
+        font-size: 38px;
+    }
+}
+
+/* Mobile styles (< 768px) */
+@media screen and (max-width: 768px) {
+    .ResevationSeater-section {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 1.5rem;
+    }
+    
+    .ResevationSeater-left {
+        width: 100%;
+        height: auto;
+        gap: 2rem;
+    }
+    
+    .ResevationSeater-left span {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .ResevationSeater-left h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    
+    .reservation-form-container {
+        gap: 1.5rem;
+    }
+    
+    .reservation-form-container div {
+        width: 100%;
+    }
+    
+    .reservation-form-container div label {
+        font-size: 16px;
+    }
+    
+    .reservation-form-container div input,
+    .reservation-form-container div select {
+        width: 100%;
+        padding: 0.7rem 0.5rem;
+        font-size: 15px;
+    }
+    
+    .ResevationSeater-right {
+        width: 100%;
+        padding: 2.5rem 2rem;
+    }
+    
+    .ResevationSeater-right > span {
+        font-size: 24px;
+    }
+    
+    .ResevationSeater-right h3 {
+        font-size: 34px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .ResevationSeater-right div .call {
+        font-size: 24px;
+        margin-top: 1rem;
+    }
+    
+    .ResevationSeater-right div .num {
+        font-size: 34px;
+    }
+}
+
+/* Small mobile (< 480px) */
+@media screen and (max-width: 480px) {
+    .ResevationSeater-section {
+        padding: 2.5rem 1rem;
+        gap: 2.5rem;
+    }
+    
+    .ResevationSeater-left {
+        gap: 1.5rem;
+    }
+    
+    .ResevationSeater-left span {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .ResevationSeater-left h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    
+    .reservation-form-container {
+        gap: 1.2rem;
+    }
+    
+    .reservation-form-container div label {
+        font-size: 15px;
+    }
+    
+    .reservation-form-container div input,
+    .reservation-form-container div select {
+        padding: 0.6rem 0.4rem;
+        font-size: 14px;
+    }
+    
+    .ResevationSeater-right {
+        padding: 2rem 1.5rem;
+    }
+    
+    .ResevationSeater-right > span {
+        font-size: 22px;
+    }
+    
+    .ResevationSeater-right h3 {
+        font-size: 28px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .ResevationSeater-right div .call {
+        font-size: 22px;
+        margin-top: 0.8rem;
+    }
+    
+    .ResevationSeater-right div .num {
+        font-size: 28px;
+    }
+}
+
+/* Extra small mobile (< 380px) */
+@media screen and (max-width: 380px) {
+    .ResevationSeater-section {
+        padding: 2rem 0.8rem;
+    }
+    
+    .ResevationSeater-left span {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    
+    .ResevationSeater-left h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    
+    .reservation-form-container div label {
+        font-size: 14px;
+    }
+    
+    .ResevationSeater-right {
+        padding: 1.5rem 1rem;
+    }
+    
+    .ResevationSeater-right > span {
+        font-size: 20px;
+    }
+    
+    .ResevationSeater-right h3 {
+        font-size: 26px;
+    }
+    
+    .ResevationSeater-right div .call {
+        font-size: 20px;
+    }
+    
+    .ResevationSeater-right div .num {
+        font-size: 26px;
+    }
+}

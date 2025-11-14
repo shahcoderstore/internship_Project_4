@@ -1,0 +1,123 @@
+.section-instaslide {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.insta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+
+.insta-button button {
+    background-color: #e7272d;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.insta-button button:hover {
+    background-color: #c91f24;
+    transform: scale(1.05);
+}
+
+.insta-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.insta-slider .swiper-slide {
+    height: 60vh !important;
+    width: 17% !important;
+}
+
+.insta-slider .swiper-slide img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .section-instaslide {
+        height: 50vh;
+    }
+    
+    .insta-button button {
+        width: 140px;
+        height: 48px;
+        font-size: 14px;
+    }
+    
+    .insta-slider .swiper-slide {
+        height: 50vh !important;
+        width: 22% !important;
+    }
+}
+
+/* Mobile styles (< 768px) */
+@media screen and (max-width: 768px) {
+    .section-instaslide {
+        height: 45vh;
+    }
+    
+    .insta-button button {
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+    
+    .insta-slider .swiper-slide {
+        height: 45vh !important;
+        width: 33% !important;
+    }
+}
+
+/* Small mobile (< 480px) */
+@media screen and (max-width: 480px) {
+    .section-instaslide {
+        height: 40vh;
+    }
+    
+    .insta-button button {
+        width: 120px;
+        height: 42px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+    
+    .insta-slider .swiper-slide {
+        height: 40vh !important;
+        width: 45% !important;
+    }
+}
+
+/* Extra small mobile (< 380px) */
+@media screen and (max-width: 380px) {
+    .section-instaslide {
+        height: 35vh;
+    }
+    
+    .insta-button button {
+        width: 110px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .insta-slider .swiper-slide {
+        height: 35vh !important;
+        width: 50% !important;
+    }
+}

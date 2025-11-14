@@ -1,0 +1,81 @@
+.DecHeader-section {
+    width: 100%;
+    position: relative;
+}
+
+.imag-conrainer {
+    background-image: url("https://cafedine-bootstrap.vercel.app/images/bg/bg-2.jpg");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: fill;
+    filter: brightness(0.5);
+}
+
+.DecHeader-section > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    line-height: 70px;
+    font-family: "Cardo", serif;
+    text-align: center;
+    width: 90%;
+    font-weight: 700;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .imag-conrainer {
+        height: 45vh;
+    }
+    
+    .DecHeader-section > h1 {
+        font-size: 50px;
+        line-height: 60px;
+        width: 85%;
+    }
+}
+
+/* Mobile styles (< 768px) */
+@media screen and (max-width: 768px) {
+    .imag-conrainer {
+        height: 40vh;
+    }
+    
+    .DecHeader-section > h1 {
+        font-size: 38px;
+        line-height: 48px;
+        width: 90%;
+    }
+}
+
+/* Small mobile (< 480px) */
+@media screen and (max-width: 480px) {
+    .imag-conrainer {
+        height: 35vh;
+    }
+    
+    .DecHeader-section > h1 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 95%;
+    }
+}
+
+/* Extra small mobile (< 380px) */
+@media screen and (max-width: 380px) {
+    .imag-conrainer {
+        height: 32vh;
+    }
+    
+    .DecHeader-section > h1 {
+        font-size: 26px;
+        line-height: 36px;
+        width: 95%;
+    }
+}

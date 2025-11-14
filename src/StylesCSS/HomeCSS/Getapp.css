@@ -1,0 +1,255 @@
+.section-getapp {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.getapp-left {
+    width: 19%;
+    height: 70vh;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px #797979;
+}
+
+.getapp-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.getapp-right {
+    width: 30%;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.getapp-right > span {
+    font-size: 36px;
+    line-height: 46px;
+    font-family: "Cookie", cursive;
+    color: #e7272d;
+}
+
+.getapp-right h2 {
+    font-size: 45px;
+    line-height: 52px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.getapp-right p {
+    color: #7e8690;
+    font-size: 18px;
+    width: 90%;
+    line-height: 1.4rem;
+}
+
+.buttons-con {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.google{
+    border: none;
+}
+.google_right {
+    width: 230px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    color: white;
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.google_right:hover {
+    background-color: #e7272d;
+}
+
+.app_right {
+    width: 230px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.app_right:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .section-getapp {
+        height: auto;
+        min-height: 80vh;
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+    
+    .getapp-left {
+        width: 25%;
+        height: 60vh;
+    }
+    
+    .getapp-right {
+        width: 45%;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .getapp-right > span {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .getapp-right h2 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+    
+    .getapp-right p {
+        font-size: 17px;
+        width: 95%;
+    }
+    
+    .buttons-con {
+        width: 100%;
+        gap: 1.5rem;
+    }
+    
+    .google_right,
+    .app_right {
+        width: 200px;
+        height: 65px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile styles (< 768px) */
+@media screen and (max-width: 768px) {
+    .section-getapp {
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 1.5rem;
+        gap: 2.5rem;
+    }
+    
+    .getapp-left {
+        width: 50%;
+        max-width: 300px;
+        height: 55vh;
+        max-height: 500px;
+    }
+    
+    .getapp-right {
+        width: 90%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .getapp-right > span {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .getapp-right h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .getapp-right p {
+        font-size: 16px;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+    
+    .buttons-con {
+        width: 100%;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    
+    .google_right,
+    .app_right {
+        width: 100%;
+        max-width: 280px;
+        height: 65px;
+    }
+}
+
+/* Small mobile (< 480px) */
+@media screen and (max-width: 480px) {
+    .section-getapp {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+    
+    .getapp-left {
+        width: 60%;
+        max-width: 250px;
+        height: 50vh;
+        max-height: 450px;
+    }
+    
+    .getapp-right {
+        width: 100%;
+        gap: 1.2rem;
+    }
+    
+    .getapp-right > span {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .getapp-right h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .getapp-right p {
+        font-size: 15px;
+        line-height: 1.4rem;
+    }
+    
+    .buttons-con {
+        gap: 1rem;
+    }
+    
+    .google_right,
+    .app_right {
+        width: 100%;
+        max-width: 260px;
+        height: 60px;
+        font-size: 13px;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+}

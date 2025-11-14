@@ -1,0 +1,56 @@
+.section-CheckOut {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem 0;
+}
+
+.CheckOut-top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    width: 70%;
+
+}
+
+.CheckOut-top h2 {
+
+    text-align: center;
+    font-size: 42px;
+    line-height: 52px;
+
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.CheckOut-top p {
+    color: #7e8690;
+    font-size: 18px;
+    line-height: 1.6rem;
+    /* line-break: anywhere; */
+    width: 55%;
+}
+
+.CheckOut-down {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.CheckOut-down img {
+    width: 350px;
+    object-fit: fill;
+    background-position: center;
+
+}

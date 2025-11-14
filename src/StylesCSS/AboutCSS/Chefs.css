@@ -1,0 +1,238 @@
+.Chefs-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.Chefs-section > span {
+    font-size: 36px;
+    line-height: 46px;
+    font-family: "Cookie", cursive;
+    color: #e7272d !important;
+}
+
+.Chefs-section > h2 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 1rem !important;
+    font-size: 42px;
+    line-height: 52px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Chefs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.Chef-con {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    gap: 1rem;
+}
+
+.Chef-con > p {
+    font-size: 18px;
+    color: #7e8690;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.Chef-con img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+}
+
+.Chef-description h3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.3rem !important;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.Chef-description p {
+    font-size: 17px;
+    font-weight: 700 !important;
+    color: #7e8690;
+    margin-top: 0;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .Chefs-section {
+        padding: 2.5rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .Chefs-section > span {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .Chefs-section > h2 {
+        font-size: 36px;
+        line-height: 46px;
+        padding: 0 1rem;
+    }
+    
+    .Chefs-container {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .Chef-con {
+        width: 30%;
+        min-width: 280px;
+    }
+    
+    .Chef-con > p {
+        font-size: 17px;
+    }
+    
+    .Chef-description h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 1rem !important;
+    }
+    
+    .Chef-description p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile styles (< 768px) */
+@media screen and (max-width: 768px) {
+    .Chefs-section {
+        padding: 2rem 1rem;
+        gap: 1.2rem;
+    }
+    
+    .Chefs-section > span {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .Chefs-section > h2 {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 0 1rem;
+    }
+    
+    .Chefs-container {
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .Chef-con {
+        width: 85%;
+        max-width: 400px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Chef-con > p {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .Chef-con img {
+        width: 100%;
+    }
+    
+    .Chef-description h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 1rem !important;
+    }
+    
+    .Chef-description p {
+        font-size: 16px;
+    }
+}
+
+/* Small mobile (< 480px) */
+@media screen and (max-width: 480px) {
+    .Chefs-section {
+        padding: 1.5rem 0.8rem;
+        gap: 1rem;
+    }
+    
+    .Chefs-section > span {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .Chefs-section > h2 {
+        font-size: 26px;
+        line-height: 36px;
+        padding: 0 0.5rem;
+    }
+    
+    .Chefs-container {
+        gap: 2rem;
+    }
+    
+    .Chef-con {
+        width: 95%;
+    }
+    
+    .Chef-con > p {
+        font-size: 15px;
+    }
+    
+    .Chef-description h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 0.8rem !important;
+    }
+    
+    .Chef-description p {
+        font-size: 15px;
+    }
+}
+
+/* Extra small mobile (< 380px) */
+@media screen and (max-width: 380px) {
+    .Chefs-section > span {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    
+    .Chefs-section > h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .Chef-con {
+        width: 100%;
+    }
+    
+    .Chef-description h3 {
+        font-size: 19px;
+        line-height: 26px;
+    }
+    
+    .Chef-description p {
+        font-size: 14px;
+    }
+}
