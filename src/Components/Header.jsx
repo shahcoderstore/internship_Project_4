@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../StylesCSS/Header.css"
 import { NavLink } from 'react-router'
+import { IoIosMenu } from "react-icons/io";
 function Header() {
+  let [toggle, setToggle] = useState(false);
+
   return (
     <section className='header-section'>
       <div className="header-left">
         <img src="	https://cafedine-bootstrap.vercel.app/images/logo.png" alt="" srcSet="" />
       </div>
-      <div className="header-right">
+      <div className={`header-right ${toggle ? "active" : ""}`}>
         <ul>
           <li>
             <NavLink to={"/"}>HOME</NavLink>
@@ -40,6 +43,12 @@ function Header() {
         </ul>
 
       </div>
+
+
+      <button className='menu-button' onClick={() => setToggle((prev) => !prev)}>
+        <IoIosMenu />
+      </button>
+
 
     </section>
   )
